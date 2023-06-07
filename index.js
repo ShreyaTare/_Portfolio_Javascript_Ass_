@@ -1,18 +1,26 @@
+/*cv download */
+const downloadButton = document.getElementById('downloadButton');
+
+downloadButton.addEventListener('click', () => {
+  window.open('resources/my_cv/CV_SHREYA_RAJESH_TARE.pdf', '_blank');
+});
+
+
 /*zoom in img*/
-const zoomImage = document.getElementById('zoomImage');
 
-zoomImage.addEventListener('mouseenter', () => {
-  zoomImage.classList.add('zoomed');
-});
+const zoomImages = document.querySelectorAll('.zoomable-image');
 
-zoomImage.addEventListener('mouseleave', () => {
-  zoomImage.classList.remove('zoomed');
-});
+  zoomImages.forEach(image => {
+    image.addEventListener('mouseenter', () => {
+      image.classList.add('zoomed');
+    });
+
+    image.addEventListener('mouseleave', () => {
+      image.classList.remove('zoomed');
+    });
+  });
 /*
-const zoomableImage = document.querySelectorAll('.zoomable-image');
-zoomableImage.forEach(image => {
-  new ImageZoom(image);
-});*/
+
 /*mouse over img */
 const projectImages = document.querySelectorAll('.project img');
 
@@ -25,14 +33,26 @@ projectImages.forEach(image => {
   });
 });
 
-/*connect with me linkdin */
-const icons = document.querySelectorAll('.icon');
+/*connect with me linkdin const icons = document.querySelectorAll('.icon');
 
 icons.forEach(icon => {
   icon.addEventListener('click', () => {
     const link = icon.dataset.link;
     if (link) {
       window.location.href = link;
+    }
+  });
+}); */
+
+
+
+const icons = document.querySelectorAll('.icon');
+
+icons.forEach(icon => {
+  icon.addEventListener('click', () => {
+    const link = icon.dataset.link;
+    if (link) {
+      window.open(link, '_blank');
     }
   });
 });
