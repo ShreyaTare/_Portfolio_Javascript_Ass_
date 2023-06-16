@@ -1,13 +1,15 @@
-/*cv download */
-const downloadButton = document.getElementById('downloadButton');
+function scrolltop() {
+    let a = window.document;
+    a = location.href = '#home';
+}
+let contact = document.getElementById('contactForm');
+contact.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert(`Sorry Request cannot be accepted due to some technical errors`);
+})
 
-downloadButton.addEventListener('click', () => {
-  window.open('resources/my_cv/CV_SHREYA_RAJESH_TARE.pdf', '_blank');
-});
 
-
-/*zoom in img*/
-
+/*zoom img*/
 const zoomImages = document.querySelectorAll('.zoomable-image');
 
   zoomImages.forEach(image => {
@@ -19,41 +21,12 @@ const zoomImages = document.querySelectorAll('.zoomable-image');
       image.classList.remove('zoomed');
     });
   });
-/*
 
-/*mouse over img */
-const projectImages = document.querySelectorAll('.project img');
 
-projectImages.forEach(image => {
-  image.addEventListener('click', () => {
-    const projectDetails = image.parentNode.querySelector('.project-details');
-    projectDetails.style.visibility = 'visible';
-    projectDetails.style.opacity = '1';
-    
-  });
+  /* cv / Resume*/
+ 
+const downloadButton = document.getElementById('downloadButton');
+
+downloadButton.addEventListener('click', () => {
+  window.open('resources/my_cv/CV_SHREYA_RAJESH_TARE.pdf', '_blank');
 });
-
-/*connect with me linkdin const icons = document.querySelectorAll('.icon');
-
-icons.forEach(icon => {
-  icon.addEventListener('click', () => {
-    const link = icon.dataset.link;
-    if (link) {
-      window.location.href = link;
-    }
-  });
-}); */
-
-
-
-const icons = document.querySelectorAll('.icon');
-
-icons.forEach(icon => {
-  icon.addEventListener('click', () => {
-    const link = icon.dataset.link;
-    if (link) {
-      window.open(link, '_blank');
-    }
-  });
-});
-
