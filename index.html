@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Shreya Portfolio - Web Developer </title>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
-    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -41,7 +41,7 @@
                 <a href="#skills">
                     <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-code"></i></li>
                 </a>
-                <a href="#services">
+                <a href="#projects">
                     <li class="bottomo-hover flex s-center items-center">
                         <i class="fa-solid fa-rocket"></i>
                     </li>
@@ -56,7 +56,7 @@
             <div class="home-content">
                 <h6 class="poppinss">Hi, I'm</h6>
                 <h1 class="t-white">Shreya Tare</h1>
-                <h4 class="poppinss">Frontend Web Developer</h4>
+                <h4 class="poppinss">Junior Web Developer</h4>
                 <a href="#" target="_blank" id="downloadButton"><button
                         class="btn poppins">Resume</button></a>
                 <a class="btn live poppins" id="hireme" href="https://www.linkedin.com/in/shreya-tare-839527209/"
@@ -66,7 +66,7 @@
         <div class="home-right flex s-center items-center">
             <div class="circle flex s-center items-center" id="mainImage">
                 
-                <img src="resources/images/main.jpeg" alt="">
+                <img src="resources/images/secondary.jpeg" alt="">
             </div>
 
         </div>
@@ -78,7 +78,7 @@
         <div class="about-container flex s-around ">
             <div class=" about-left flex s-center items-center">
                 
-                <img src="resources/images/secondary.jpeg" alt="" style="width: 50%;">
+                <img src="resources/images/main.jpeg" alt="" style="width: 50%;">
             </div>
 
             <div class="about-right flex">
@@ -118,7 +118,7 @@
             <h1>Skills</h1>
         </div>
         <section id="skills" class="contact-icon">
-
+         
             <div class="icon-container">
                 <img src="resources/icons/html (1).png" alt="Icon" class="icon1">
             </div>
@@ -163,17 +163,17 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <h1 class=" t-center my-2 t-white f-2 pro">Projects</h1>
         <div class="projects-container flex s-center">
             <div class="projects-item flex f-col s-center items-center">
                 <div class="image-container p-one">
-                    <img src="resources/images/Teacozyproject.png" alt="">
+                    <img id="zoomImage" class="zoomable-image" src="resources/images/Teacozyproject.png" alt="">
                 </div>
-                <h1 class="t-white poppins">TEACOZY Project</h1>
-                <p class="t-white poppins"> A weather app using HTML, CSS and JavaScript. Fetch the weather from the
+                <h1 class="t-white poppins" style="margin-top: 30px;">TEACOZY Project</h1>
+                <p class="t-white poppins"> A TEACOZY Project using HTML, CSS . Fetch the weather from the
                     openweather app using fetch api.</p>
                 <div class="buttons flex s-around">
-                    <a href="#"
+                    <a href="https://github.com/ShreyaTare/teacozy"
                         target="_blanks" class="btn mx-1 m-top">GitHub</a>
                     <a href="https://shreyatare.github.io/teacozy/" target="_blanks" class="btn m-top live">Live
                         Link</a>
@@ -181,13 +181,13 @@
             </div>
             <div class="projects-item flex f-col s-center items-center">
                 <div class="image-container p-one">
-                    <img src="resources/images/restaurant.png" alt="">
+                    <img id="zoomImage" class="zoomable-image" src="resources/images/restaurant.png" alt="">
                 </div>
-                <h1 class="t-white poppins">Restaurant-</h1>
-                <p class="t-white poppins">A simple landing page using HTML and CSS. This webiste is for burger shop who
+                <h1 class="t-white poppins" style="margin-top: 30px;">Restaurant-</h1>
+                <p class="t-white poppins">A simple page using HTML and CSS. This webiste is for See menus who
                     provides all the information of thir services at this landing page.</p>
                 <div class="buttons flex s-around">
-                    <a href="#" target="_blanks"
+                    <a href="https://github.com/ShreyaTare/Restaurant-" target="_blanks"
                         class="btn mx-1 m-top">GitHub</a>
                     <a href="https://shreyatare.github.io/Restaurant-/" target="_blanks" class="btn m-top live">Live
                         Link</a>
@@ -195,15 +195,15 @@
             </div>
             <div class="projects-item flex f-col s-center items-center">
                 <div class="image-container p-two">
-                    <img src="./Images/MBA.png" alt="">
+                    <img id="zoomImage" class="zoomable-image" src="resources/images/Go_Tourism&Travel.png" alt="tourism_Travel">
                 </div>
 
-                <h1 class="t-white poppins">Tourism & Tarvel</h1>
+                <h1 class="t-white poppins" style="margin-top: 30px;">Tourism & Tarvel</h1>
                 <p class="t-white poppins">Tourism & travel 
                     This project is still ongoing project and <br>
                      Technology use for this project Html,CSS currently I m working on javascript</sp>
                 <div class="buttons flex s-around">
-                    <a href="#" target="_blank"
+                    <a href="https://github.com/ShreyaTare/tourism_Travel" target="_blank"
                         class="btn mx-1 m-top">GitHub</a>
                     <a href="https://shreyatare.github.io/tourism_Travel/" target="_blank"
                         class="btn m-top live">Live Link</a>
@@ -211,17 +211,15 @@
             </div>
             <div class="projects-item flex f-col s-center items-center">
                 <div class="image-container p-three">
-                    <img src="./Images/magicNotes.png" alt="">
+                    <img id="zoomImage" class="zoomable-image" src="resources/images/calculator.png" alt="calculator">
                 </div>
 
-                <h1 class="t-white poppins">Magic Notes App</h1>
-                <p class="t-white poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati cum
-                    nemo
-                    recusandae voluptas ipsum.s</p>
+                <h1 class="t-white poppins" style="margin-top: 30px;">Calculator Web application</h1>
+                <p class="t-white poppins">This is simple calculator web app and make some Mathamatical operation using HTML ,CSS and Javascript </p>
                 <div class="buttons flex s-around">
-                    <a href="#" target="_blank"
+                    <a href="https://github.com/ShreyaTare/calculator" target="_blank"
                         class="btn mx-1 m-top">GitHub</a>
-                    <a href="#" target="_blank" class="btn m-top live">Live
+                    <a href="https://shreyatare.github.io/calculator/" target="_blank" class="btn m-top live">Live
                         Link</a>
                 </div>
             </div>
@@ -279,7 +277,7 @@
             <li><a href="#about" class="poppinss">About</a></li>
             <li><a href="#skills" class="poppinss">Skills</a></li>
             <li><a href="#projects" class="poppinss">Projects</a></li>
-            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+            <!--<li><a href="#portfolio" class="poppinss">Portfolio</a></li>-->
         </ul>
         <ul class="flex s-center w-80 font-awesome ">
             <a href="https://www.linkedin.com/in/shreya-tare-839527209/" target="_blank">
@@ -288,7 +286,7 @@
             <a href="https://github.com/ShreyaTare?tab=repositories" target="_blank">
                 <li><i class="fa-brands fa-github"></i></li>
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/_s__h__r__e__y__a__/?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
                 <li><i class="fa-brands fa-instagram"></i></li>
             </a>
             <!--<a href="#" target="_blank">
