@@ -125,6 +125,21 @@ h4 {
     margin-bottom: 2rem;
 }
 
+.highlight{
+    text-decoration: double;
+    color: #e0d209;
+}
+
+.about-content p {
+    text-align: justify;
+    font-family: "poppins", sans-serif;
+  line-height: 1.5;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+
 
 /* Skills */
 #skills {
